@@ -129,7 +129,8 @@ public class BinarySearchTree {
 		
 		return current;
 	}
-
+	
+	
 	public void printBFS() {
 	
 		Queue<Node> queue = new LinkedList<>();
@@ -146,6 +147,10 @@ public class BinarySearchTree {
 				queue.add(node.right);
 		}
 		
+	}
+	
+	public Node getRoot() {
+		return root;
 	}
 	
 	public static void main(String[] args) {

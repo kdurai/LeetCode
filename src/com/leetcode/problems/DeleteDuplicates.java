@@ -33,8 +33,8 @@ public class DeleteDuplicates {
 			if (temp.getData() == temp.getNext().getData()) {
 				temp.setNext(temp.getNext().getNext());
 			}
-
-			temp = temp.getNext();
+			else
+				temp = temp.getNext();
 		}
 
 		return head;
