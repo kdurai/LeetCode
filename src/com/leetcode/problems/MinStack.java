@@ -1,13 +1,17 @@
 package com.leetcode.problems;
 
+import java.util.Stack;
+
 public class MinStack {
+	
+	Stack<Integer> s = new Stack<>();
 
 	public MinStack() {
         
     }
     
     public void push(int x) {
-        
+        int min = x;
     }
     
     public void pop() {

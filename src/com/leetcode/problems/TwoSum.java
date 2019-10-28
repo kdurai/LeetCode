@@ -28,4 +28,35 @@ public class TwoSum {
 	        throw new IllegalArgumentException("Target value does not exist in the array");
 	        
 	 }
+	 
+	 private static int[] twoSumAlt(int[] numbers, int target) {
+		 
+		    int[] result = new int[2];
+		    
+		    if(numbers == null || numbers.length < 2)
+		 		return result;
+		    
+		    int left = 0; 
+		    int right = numbers.length - 1;
+	        
+	        while(left < right) {
+	        	
+	        	int total = numbers[left] + numbers[right];
+	        	
+	        	if(total == target) {
+	        		result[0] = left + 1;
+	        		result[1] = right + 1;
+	        		break;
+	        	}
+	        	
+	        	if(total > target)
+	        		right--;
+	        	else
+	        		left++;
+	        	
+	        }
+	        
+	        return result;
+	        
+	 }
 }
