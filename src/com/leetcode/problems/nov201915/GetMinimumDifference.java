@@ -46,7 +46,7 @@ public class GetMinimumDifference {
         getMinimumDifference(root.left);
         
         if(prev != null)
-        	min = Math.min(min,  root.val);
+        	min = Math.min(min,  root.val-prev);
         
         prev = root.val;
 
