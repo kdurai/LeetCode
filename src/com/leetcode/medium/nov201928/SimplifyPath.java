@@ -60,7 +60,7 @@ public class SimplifyPath {
 		for(String str: path.split("/"))
 		{
 			if(str.equals("..")) list.poll();
-			if(!str.equals("") && !str.equals(".")) list.push(str);
+			else if(!str.equals("") && !str.equals(".")) list.push(str);
 		}
 		
 		StringBuilder sb = new StringBuilder();
