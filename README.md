@@ -1,3 +1,3 @@
 # LeetCode
 
-This repository has top solutions for many of leetcode problems.
+This repository has top solutions for many leetcode problems.
