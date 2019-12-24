@@ -1,4 +1,4 @@
-package com.leetcode.contest.dec201908;
+package com.leetcode.contest.nov201924;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,7 +1,5 @@
 package com.leetcode.contest.nov201924;
 
-import java.util.Arrays;
-
 /*
  * You are given a map of a server center, represented as a m * n integer matrix grid, where 1 means that 
  * on that cell there is a server and 0 means that it is no server. Two servers are said to communicate if 
