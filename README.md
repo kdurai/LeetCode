@@ -1,3 +1,5 @@
-# LeetCode
+# About
 
-This repository has top solutions for many leetcode problems.
+This repository has best solutions for many easy and medium leetcode problems.
+
+
