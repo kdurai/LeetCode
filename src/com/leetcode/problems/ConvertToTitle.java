@@ -4,7 +4,7 @@ public class ConvertToTitle {
 
 	public static void main(String[] args) {
 
-		System.out.println(convertToTitle(3));
+		System.out.println(convertToTitle(33));
 	}
 
 	private static String convertToTitle(int n) {

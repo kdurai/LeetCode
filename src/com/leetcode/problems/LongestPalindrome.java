@@ -4,7 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
- * Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+ * Given a string which consists of lowercase or uppercase letters, find the length of the 
+ * longest palindromes that can be built with those letters.
 
 This is case sensitive, for example "Aa" is not considered a palindrome here.
 
@@ -41,7 +42,7 @@ public class LongestPalindrome {
 		int ret = 0;
 		for(int v : count) 
 		{
-			ret +=  v/2 * 2;
+			ret += v/2 * 2;
 			if(ret %2 == 0 && v %2 == 1)
 				ret++;
 		}
