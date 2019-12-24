@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /*
+ * 
  * There are n people whose IDs go from 0 to n - 1 and each person belongs exactly to one group. Given the 
  * array groupSizes of length n telling the group size each person belongs to, return the groups there are
  *  and the people's IDs each group includes.
