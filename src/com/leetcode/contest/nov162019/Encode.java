@@ -12,5 +12,6 @@ public class Encode {
 
 	private static String encode(int num) {
 		return Integer.toBinaryString(num + 1).substring(1);
+		//return num > 0 ? encode((num-1)/2) + "10".charAt(num%2):"";
     }
 }
