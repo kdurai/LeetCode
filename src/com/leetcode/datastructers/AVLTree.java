@@ -1,9 +1,5 @@
 package com.leetcode.datastructers;
 
-/*
- * This is AVLTree data structure class
- * 
- */
 public class AVLTree {
 
 	Node root;

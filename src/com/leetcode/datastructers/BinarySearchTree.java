@@ -17,18 +17,18 @@ public class BinarySearchTree {
 		else
 		{
 			Node current = root;
-			Node parent = null;
+			Node previous = null;
 					
 			while(true)
 			{
-				parent = current;
+				previous = current;
 				
-				if(data < parent.val)
+				if(data < previous.val)
 				{
 					current = current.left;
 					
 					if(current == null) {
-						parent.left = temp;
+						previous.left = temp;
 						return;
 					}
 				}
@@ -37,7 +37,7 @@ public class BinarySearchTree {
 					current = current.right;
 					
 					if(current == null) {
-						parent.right = temp;
+						previous.right = temp;
 						return;
 					}
 				}
@@ -113,6 +113,25 @@ public class BinarySearchTree {
 			System.out.print(result.pop() + " ");
 		}
 	}
+	
+	public void printBFS() {
+		
+		Queue<Node> queue = new LinkedList<>();
+		queue.add(root);
+		
+		while(!queue.isEmpty()) {
+			Node node = queue.poll();
+			System.out.print(node.val + " ");
+			
+			if(node.left != null)
+				queue.add(node.left);
+			
+			if(node.right != null)
+				queue.add(node.right);
+		}
+		
+	}
+	
 	public Node getNode(int data) {
 		Node current = root;
 		
@@ -128,25 +147,6 @@ public class BinarySearchTree {
 		}
 		
 		return current;
-	}
-	
-	
-	public void printBFS() {
-	
-		Queue<Node> queue = new LinkedList<>();
-		queue.add(root);
-		
-		while(!queue.isEmpty()) {
-			Node node = queue.poll();
-			System.out.print(node.val + " ");
-			
-			if(node.left != null)
-				queue.add(node.left);
-			
-			if(node.right != null)
-				queue.add(node.right);
-		}
-		
 	}
 	
 	public Node getRoot() {
